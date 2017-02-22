@@ -42,8 +42,6 @@ p {
 /* ===== LAYOUT STYLES ===== */
 
 .signup {
-  
-  font-family: "Georgia", serif;
   border-radius: 0.33em;
   border-style: none;
   font-size: 1.45em;
@@ -53,7 +51,6 @@ p {
 }
 
 .features {
-  font-family: "Comic Sans MS", cursive, sans-serif;
   border-radius: 0.33em;
   border-style: none;
   font-size: 1.45em;
