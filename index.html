@@ -5,48 +5,53 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="screen.css"/>
-  <script        src="home.js"></script>
+  <script  src="home.js" type="text/javascript"></script>
 </head>
 <body>
-<main>
-  <h1>Retro Gaming News and Weekly Highlights</h1>
-  <img src="icon.png" alt="icon" class = "center">
-  <p>
-      This is a website dedicated to providing fans of retro video games a place to get news, events and a fun and respectful forum to talk about our favorite retro games. Here at Retro Gaming News we welcome all gaming enthusiasts and encourage everyone to become part of our conversation. Join today!
-  </p>
-<section class = "features">
-  <ul>
-    <li>Exclusive interviews</li>
-    <li>Worldwide community</li>
-    <li>Forums for sellers and buyers</li>
-    <li>Game Reviews</li>
-    <li>Guides for collecting and authenticating</li>
-  </ul>
-</section>
-<img src="icon2.png" alt="icon2" class = "center">
-<form action="#null" method="post" class="signup">
-  <label for ="name">Name:</label>    
+  background-color: #D2691E;
+  <main>
+    <h1>Retro Gaming News and Weekly Highlights</h1>
+    <img src="icon.png" alt="icon" class = "center">
+    <p>
+      Do you like playing retro video games? Do you have fond memories of playing the old atari or NES games? If so, then we welcome you to join our community! This is a website dedicated to providing fans of retro video games a place to get news, events and a fun and respectful forum to talk about our favorite retro games. Here at Retro Gaming News we welcome all gaming enthusiasts and encourage everyone to become part of our conversation. You could make a profile and catalog and share your entire collection. Join today!
+    </p>
+    <section class = "features">
+      <ul>
+        <li>Exclusive interviews</li>
+        <li>Worldwide community</li>
+        <li>Forums for sellers and buyers</li>
+        <li>Game Reviews</li>
+        <li>Guides for collecting and authenticating</li>
+      </ul>
+    </section>
+  <img src="icon2.png" alt="icon2" class = "center">
+  <form id="form" name="form" action="#null" method="post" class="signup" onSubmit="return validate()">
+    <label for ="name">Name:</label>    
     <input type="text" id="name" name="name" placeholder="Enter your name" required/>
     <label for ="alias">Choose an alias:</label>    
-    <input type="alias" id="alias" name="Alias" placeholder="Enter alias" required />
+    <input type="alias" id="alias" name="alias" placeholder="Enter alias" required />
+    <label for ="password">Choose a password:</label>    
+    <input type="password" id="password" name="password" placeholder="Enter password" required />
+    <label for ="confm">Please re-enter password:</label>    
+    <input type="password" id="confm" name="confm" placeholder="Please re-enter your password" required />
     <label for ="email">E-mail address:</label>    
-    <input type="email" id="email" name="Email" placeholder="Enter email" required />
-    
+    <input type="email" id="email" name="email" placeholder="Enter email" required />
   <label for ="console">Favorite Retro Console:</label> 
     <select>
-      <option value="Atari">Atari 2600</option>
-      <option value="Commodore">Commodore 64</option>
+      <option value="atari">Atari 2600</option>
+      <option value="commodore">Commodore 64</option>
       <option value="NES">NES</option>
       <option value="SNES">SNES</option>
-      <option value="Genesis">Genesis</option>
-      <option value="Turbo">Turbo Graphics 16</option>
-      <option value="Playstation">Playstation</option>
+      <option value="genesis">Genesis</option>
+      <option value="turbo">Turbo Graphics 16</option>
+      <option value="playstation">Playstation</option>
       <option value="64">Nintendo 64</option>
-      <option value="Saturn">Sega Saturn</option>
+      <option value="saturn">Sega Saturn</option>
+      <option value="other">Other (input below)</option>
     </select>
-<label for ="console">Other:</label>    
-    <input type="console" id="console" name="Console" placeholder="Any retro console or PC" required />
+  <label for ="console">Other:</label>    
+    <input type="console" id="console" name="Console" placeholder="Any retro console or PC" />
     <input type="submit" value ="Join" class="button"/>
- </form>
-
+  </form>
+</body>
 </html>
