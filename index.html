@@ -5,11 +5,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="screen.css"/>
-  <script  src="home.js" type="text/javascript"></script>
+  <script src="home.js" type="text/javascript"></script>
 </head>
 <body>
-  background-color: #D2691E;
-  <main>
+  <style>background-color: #D2691E;</style>
     <h1>Retro Gaming News and Weekly Highlights</h1>
     <img src="icon.png" alt="icon" class = "center">
     <p>
@@ -33,7 +32,7 @@
     <label for ="password">Choose a password:</label>    
     <input type="password" id="password" name="password" placeholder="Enter password" required />
     <label for ="confm">Please re-enter password:</label>    
-    <input type="password" id="confm" name="confm" placeholder="Please re-enter your password" required />
+    <input type="password" id="confm" name="confm" placeholder="Please re-enter password" required />
     <label for ="email">E-mail address:</label>    
     <input type="email" id="email" name="email" placeholder="Enter email" required />
   <label for ="console">Favorite Retro Console:</label> 
@@ -50,7 +49,7 @@
       <option value="other">Other (input below)</option>
     </select>
   <label for ="console">Other:</label>    
-    <input type="console" id="console" name="Console" placeholder="Any retro console or PC" />
+    <input id="console" name="Console"/>
     <input type="submit" value ="Join" class="button"/>
   </form>
 </body>
