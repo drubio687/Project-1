@@ -58,11 +58,17 @@ p {
 }
 
 .button {
-    background-color: #1E90FF;
+    background: #EA7B00;
+    color: #fff;
     padding: .75em 2em;
     text-align: center;
     display: inline-block;
     font-size: .60em;
+    border: none;
+    padding: .5em .938em .5em .938em;
+    background: #FF8500;
+    color: #fff;
+    border-radius: .5em;
 }
 
 img.center {
@@ -116,3 +122,63 @@ img.center {
 
 /* Shows the menu */
 .show {display:block;}
+
+/* ===== STATE STYLES ===== */
+
+@media screen and (min-width: 31.250em) 
+  /* 500 pixels or larger screens */{
+p {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.5em;
+  line-height: 1.2em; 
+  }
+h1 {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 2.5em;
+  line-height: 1.2em; 
+  }
+.features {
+  border-radius: 0.33em;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.2em; 
+}
+.signup {
+  border-radius: 0.30em;
+  font-size: 2em;
+  font-weight: 700;
+  white-space: pre-line;
+  line-height: 1.2em; 
+}
+}
+
+@media screen and (min-width: 50em)
+/* 800 pixels or larger screens*/ {
+p {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 2em; 
+  line-height: 1.2em; 
+}
+h1 {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 3em;
+  line-height: 1.2em; 
+  }
+.features {
+  border-radius: 0.22em;
+  font-size: 2.2em;
+  font-weight: 900;
+  line-height: 1.2em; 
+}
+.signup {
+  border-radius: 0.25em;
+  font-size: 2em;
+  font-weight: 900;
+  white-space: pre-line;
+  line-height: 1.2em; 
+}
+}
