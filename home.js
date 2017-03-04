@@ -30,14 +30,14 @@ return false;
 else
 if(document.form.confm.value=='')
 {
-alert("Password don't match, please try again.");
+alert("Please re-enter your password");
 document.form.confm.focus();
 return false;
 }
 else
 if(document.form.password.value!=document.form.confm.value)
 {
-alert("Please Enter correct Re type Password");
+alert("Passwords do not match, please try again.");
 document.form.confm.focus();
 return false;
 }
